@@ -4,9 +4,9 @@
 # Starting...
 1. Install arduino IDE
 2. You can check rpm rate by clicking the serialMonitor (Tool > serialMonitor) below.
-![result](/serialMonitor.png)
+![result](README/serialMonitor.png)
 
 
 ## Result
 (stat : motor running)
-![serialMonitor](/result.png)
+![serialMonitor](README/result.png)
