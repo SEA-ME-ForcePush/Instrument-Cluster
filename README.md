@@ -1,12 +1,12 @@
-### rpm_sensor
-rpm_sensor made by arduino codes
+# rpm_sensor
+: rpm_sensor made by arduino codes
 
-- install arduino IDE
+# Starting...
+1. Install arduino IDE
+2. You can check rpm rate by clicking the serialMonitor (Tool > serialMonitor) below.
+![result](/serialMonitor.png)
 
-- you can check rpm rate by uploading the code.
 
-![result](/rpm_sensor/serialMonitor.png)
-- you can check rpm rate with the serialMonitor (Tool > serialMonitor) below.
-
-### Result
-![serialMonitor](/rpm_sensor/result.png)
+## Result
+(stat : motor running)
+![serialMonitor](/result.png)
