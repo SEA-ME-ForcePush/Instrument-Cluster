@@ -1,5 +1,5 @@
 # Instrument Cluster
-## 01. Arduino - calculating rpm by speed sensor 
+## 01. Arduino - calculating rpm by speed sensor (7 August 2024) 
 - rpm_sensor
 : rpm_sensor made by arduino codes
 
