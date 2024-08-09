@@ -23,6 +23,8 @@
   - connect the voltcraft with the wheel motor and give the power. (need to be tested previously, connection with the male connector.)
   - attach the wheel to the motor. (we need to make the whole (of the wheel) bigger by drills.)
   - attach female connector to the D0, GRD, VCC port of the speed sensor and attach the other side of the connector to the arduino.(D0 specifies the port that we will going to use.)
+
+</br> // need pics of how to attach the arduino and the CAN SHEILD here!
  
 #### Terms
 - `MCP2515 CAN Module`
@@ -42,5 +44,5 @@
 
 #### Stuggles
 - if we want to use 5V, we need to use the VCC1 instead of VCC. (recommended)
-- we should give the delays to make time to receive the data from the sender arduino. -> sender and the reciever arduino has to put the same delay time. (for our code, delay(1000)).
+- we should give the delays to make time to receive the data from the sender arduino. -> sender and the reciever arduino has to put the same delay time. (for our code, `delay(1000)`).
 
