@@ -3,12 +3,11 @@
 - rpm_sensor
 : rpm_sensor made by arduino codes
 
-#### Starting...
-1. Install arduino IDE
-2. You can check rpm rate by clicking the serialMonitor (Tool > serialMonitor) below.
+#### Functions
+You can check rpm rate by clicking the serialMonitor (Tool > serialMonitor) below.
 
 #### Result
-(stat : motor running), but still needs to flatten the data using the filter. (bonus part)
+(stat: motor running), but still needs to flatten the data using the filter. (bonus part)
 ![serialMonitor](README/result.png)
 
 ## 02. Testing connection with arduinos (8 August 2024) 
@@ -16,13 +15,13 @@
 - We used `MCP2515 CAN Module` for the CAN SHIELD 
                                   
 #### Basic Settings
-- Download `Arduino IDE`.
+- Download [`Arduino IDE`](https://www.arduino.cc/en/software).
 - Set the correct board and the port that you're going to work on. (Used Arduino UNO & Arduino NANO)
 - `Making speed sensor`: 
   - first, we have to handle the (speed sensor) wheel to move between the sensors. (later we have to attach the (speed sensor) wheel to the back wheel of our PiRacer, and also attach the actual sensor nearby.)
   - connect the voltcraft with the wheel motor and give the power. (need to be tested previously, connection with the male connector.)
   - attach the wheel to the motor. (we need to make the whole (of the wheel) bigger by drills.)
-  - attach female connector to the D0, GRD, VCC port of the speed sensor and attach the other side of the connector to the arduino.(D0 specifies the port that we will going to use.)
+  - attach female connector to the D0, GRD, VCC port of the speed sensor and attach the other side of the connector to the arduino.(D0 specifies the port that we will going to use.) (Usually we use the black connector when we're going to connect the GRD, use the white one for the voltage.)
 
 </br> // need pics of how to attach the arduino and the CAN SHEILD here!
  
@@ -38,11 +37,11 @@
   - VCC
 
 #### Code Settings
-- Have to install the 'CAN BUS SHIELD' library (Sketch > Include Library > Manage Libraries).
+- Have to install the `CAN BUS SHIELD` library (Sketch > Include Library > Manage Libraries).
 - (need to use an old version of bootloader, not the default one)
-- program authorization -> sudo chmod a+rw [file directory/file name]
+- program authorization -> `sudo chmod a+rw [file directory/file name]`
 
 #### Stuggles
-- if we want to use 5V, we need to use the VCC1 instead of VCC. (recommended)
+- if we want to use 5V, we need to use the `VCC1` instead of `VCC`. (recommended)
 - we should give the delays to make time to receive the data from the sender arduino. -> sender and the reciever arduino has to put the same delay time. (for our code, `delay(1000)`).
 
