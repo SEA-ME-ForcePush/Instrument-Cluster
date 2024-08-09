@@ -19,9 +19,9 @@ You can check rpm rate by clicking the serialMonitor (Tool > serialMonitor) belo
 - Set the correct board and the port that you're going to work on. (Used Arduino UNO & Arduino NANO)
 - `Making speed sensor`: 
   - first, we have to handle the (speed sensor) wheel to move between the sensors. (later we have to attach the (speed sensor) wheel to the back wheel of our PiRacer, and also attach the actual sensor nearby.)
-  - connect the voltcraft with the wheel motor and give the power. (need to be tested previously, connection with the male connector.)
+  - connect the voltcraft with the wheel motor and give the power. (need to be tested previously, connection with the male breakout wire.)
   - attach the wheel to the motor. (we need to make the whole (of the wheel) bigger by drills.)
-  - attach female connector to the D0, GRD, VCC port of the speed sensor and attach the other side of the connector to the arduino.(D0 specifies the port that we will going to use.) (Usually we use the black connector when we're going to connect the GRD, use the white one for the voltage.)
+  - attach female breakout wire to the D0, GRD, VCC port of the speed sensor and attach the other side of the breakout wire to the arduino.(D0 specifies the port that we will going to use.) (Usually we use the black breakout wire when we're going to connect the GRD, use the white one for the voltage.)
 
 </br> // need pics of how to attach the arduino and the CAN SHEILD here!
  
