@@ -45,12 +45,12 @@ jobs:
           cd build && \
           cmake . && \
           make && \
-          cp InstrumentCluster /project/
-          ldd InstrumentCluster
+          cp Instrument-Cluster /project/
+          ldd Instrument-Cluster
         "
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2
       with:
         name: build-artifacts
-        path: build/InstrumentCluster
+        path: build/Instrument-Cluster
