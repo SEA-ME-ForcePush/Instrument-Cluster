@@ -383,9 +383,15 @@ CMakeFiles/GaugeApp.dir/main.cpp.o: \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtQml/qqmlabstracturlinterceptor.h \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtQml/QQmlContext \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtQml/qqmlcontext.h \
- /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/speedcontroller.h \
+ /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.h \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/QObject \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qobject.h \
- /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
- /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qtimer.h \
- /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qbasictimer.h
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/QCanBusDevice \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusdevice.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusframe.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qtserialbusglobal.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qtserialbus-config.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qtserialbusexports.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusdeviceinfo.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/QCanBusFrame \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusframe.h

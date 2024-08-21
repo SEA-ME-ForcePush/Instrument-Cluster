@@ -235,6 +235,30 @@ GaugeApp_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.s
 .PHONY : GaugeApp_autogen/mocs_compilation.cpp.s
 
+canhandler.o: canhandler.cpp.o
+.PHONY : canhandler.o
+
+# target to build an object file
+canhandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/canhandler.cpp.o
+.PHONY : canhandler.cpp.o
+
+canhandler.i: canhandler.cpp.i
+.PHONY : canhandler.i
+
+# target to preprocess a source file
+canhandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/canhandler.cpp.i
+.PHONY : canhandler.cpp.i
+
+canhandler.s: canhandler.cpp.s
+.PHONY : canhandler.s
+
+# target to generate assembly for a file
+canhandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/canhandler.cpp.s
+.PHONY : canhandler.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -259,30 +283,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-speedcontroller.o: speedcontroller.cpp.o
-.PHONY : speedcontroller.o
-
-# target to build an object file
-speedcontroller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o
-.PHONY : speedcontroller.cpp.o
-
-speedcontroller.i: speedcontroller.cpp.i
-.PHONY : speedcontroller.i
-
-# target to preprocess a source file
-speedcontroller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/speedcontroller.cpp.i
-.PHONY : speedcontroller.cpp.i
-
-speedcontroller.s: speedcontroller.cpp.s
-.PHONY : speedcontroller.s
-
-# target to generate assembly for a file
-speedcontroller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/speedcontroller.cpp.s
-.PHONY : speedcontroller.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -303,12 +303,12 @@ help:
 	@echo "... GaugeApp_autogen/mocs_compilation.o"
 	@echo "... GaugeApp_autogen/mocs_compilation.i"
 	@echo "... GaugeApp_autogen/mocs_compilation.s"
+	@echo "... canhandler.o"
+	@echo "... canhandler.i"
+	@echo "... canhandler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... speedcontroller.o"
-	@echo "... speedcontroller.i"
-	@echo "... speedcontroller.s"
 .PHONY : help
 
 

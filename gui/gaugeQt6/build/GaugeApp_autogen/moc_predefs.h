@@ -150,6 +150,7 @@
 #define __cplusplus 201703L
 #define __cpp_ref_qualifiers 200710L
 #define __DEC32_MIN__ 1E-95DF
+#define QT_SERIALBUS_LIB 1
 #define __DEPRECATED 1
 #define __cpp_rvalue_references 200610L
 #define __DBL_MAX_EXP__ 1024
@@ -386,6 +387,7 @@
 #define __LONG_WIDTH__ 64
 #define __PIC__ 2
 #define __UINT_FAST32_TYPE__ long unsigned int
+#define QT_SERIALPORT_LIB 1
 #define __FLT32X_NORM_MAX__ 1.79769313486231570814527423731704357e+308F32x
 #define __CHAR32_TYPE__ unsigned int
 #define QT_QMLBUILTINS_LIB 1

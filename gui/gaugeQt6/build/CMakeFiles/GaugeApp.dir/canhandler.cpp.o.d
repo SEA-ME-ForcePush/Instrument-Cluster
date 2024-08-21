@@ -1,8 +1,7 @@
-CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.o: \
- /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/GaugeApp_autogen/mocs_compilation.cpp \
+CMakeFiles/GaugeApp.dir/canhandler.cpp.o: \
+ /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp \
  /usr/include/stdc-predef.h \
- /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/GaugeApp_autogen/EWIEGA46WW/moc_canhandler.cpp \
- /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/GaugeApp_autogen/EWIEGA46WW/../../../canhandler.h \
+ /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.h \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/QObject \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qobject.h \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qobjectdefs.h \
@@ -320,6 +319,28 @@ CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.o: \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qshareddata.h \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/QCanBusFrame \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusframe.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/QCanBus \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbus.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusdevice.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/QDebug \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qdebug.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qtextstream.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qcontiguouscache.h \
+ /usr/include/c++/11/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qmap.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qshareddata_impl.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qset.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qhash.h \
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qvarlengtharray.h \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/QList \
- /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qlist.h \
- /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qtmochelpers.h
+ /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qlist.h

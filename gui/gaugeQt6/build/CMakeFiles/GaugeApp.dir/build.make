@@ -108,19 +108,19 @@ CMakeFiles/GaugeApp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaugeApp.dir/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/main.cpp -o CMakeFiles/GaugeApp.dir/main.cpp.s
 
-CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o: CMakeFiles/GaugeApp.dir/flags.make
-CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o: ../speedcontroller.cpp
-CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o: CMakeFiles/GaugeApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o -MF CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o.d -o CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o -c /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/speedcontroller.cpp
+CMakeFiles/GaugeApp.dir/canhandler.cpp.o: CMakeFiles/GaugeApp.dir/flags.make
+CMakeFiles/GaugeApp.dir/canhandler.cpp.o: ../canhandler.cpp
+CMakeFiles/GaugeApp.dir/canhandler.cpp.o: CMakeFiles/GaugeApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GaugeApp.dir/canhandler.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GaugeApp.dir/canhandler.cpp.o -MF CMakeFiles/GaugeApp.dir/canhandler.cpp.o.d -o CMakeFiles/GaugeApp.dir/canhandler.cpp.o -c /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp
 
-CMakeFiles/GaugeApp.dir/speedcontroller.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaugeApp.dir/speedcontroller.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/speedcontroller.cpp > CMakeFiles/GaugeApp.dir/speedcontroller.cpp.i
+CMakeFiles/GaugeApp.dir/canhandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaugeApp.dir/canhandler.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp > CMakeFiles/GaugeApp.dir/canhandler.cpp.i
 
-CMakeFiles/GaugeApp.dir/speedcontroller.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaugeApp.dir/speedcontroller.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/speedcontroller.cpp -o CMakeFiles/GaugeApp.dir/speedcontroller.cpp.s
+CMakeFiles/GaugeApp.dir/canhandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaugeApp.dir/canhandler.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp -o CMakeFiles/GaugeApp.dir/canhandler.cpp.s
 
 CMakeFiles/GaugeApp.dir/GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.o: CMakeFiles/GaugeApp.dir/flags.make
 CMakeFiles/GaugeApp.dir/GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.o: GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp
@@ -140,7 +140,7 @@ CMakeFiles/GaugeApp.dir/GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.s: cmake_force
 GaugeApp_OBJECTS = \
 "CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/GaugeApp.dir/main.cpp.o" \
-"CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o" \
+"CMakeFiles/GaugeApp.dir/canhandler.cpp.o" \
 "CMakeFiles/GaugeApp.dir/GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.o"
 
 # External object files for target GaugeApp
@@ -148,20 +148,22 @@ GaugeApp_EXTERNAL_OBJECTS =
 
 GaugeApp: CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.o
 GaugeApp: CMakeFiles/GaugeApp.dir/main.cpp.o
-GaugeApp: CMakeFiles/GaugeApp.dir/speedcontroller.cpp.o
+GaugeApp: CMakeFiles/GaugeApp.dir/canhandler.cpp.o
 GaugeApp: CMakeFiles/GaugeApp.dir/GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.o
 GaugeApp: CMakeFiles/GaugeApp.dir/build.make
 GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6QuickControls2.so.6.7.2
+GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6SerialBus.so.6.7.2
 GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6Quick.so.6.7.2
 GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6QmlModels.so.6.7.2
 GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6Qml.so.6.7.2
 GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6QmlBuiltins.a
-GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6Network.so.6.7.2
 GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6OpenGL.so.6.7.2
 GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2
-GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2
 GaugeApp: /usr/lib/x86_64-linux-gnu/libGLX.so
 GaugeApp: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6Network.so.6.7.2
+GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6SerialPort.so.6.7.2
+GaugeApp: /home/sevo/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2
 GaugeApp: CMakeFiles/GaugeApp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable GaugeApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GaugeApp.dir/link.txt --verbose=$(VERBOSE)

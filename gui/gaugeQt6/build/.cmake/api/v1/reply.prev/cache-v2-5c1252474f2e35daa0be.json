@@ -1430,6 +1430,18 @@
 			"value" : "[/usr/include][v()]"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_XKB",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding XKB"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/lib/x86_64-linux-gnu/libxkbcommon.so][/usr/include][v1.4.0(0.5.0)]"
+		},
+		{
 			"name" : "GaugeApp_BINARY_DIR",
 			"properties" : 
 			[
@@ -1683,10 +1695,46 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "1"
 		},
 		{
 			"name" : "PKG_XKB_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "PKG_XKB_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_XKB_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/lib/x86_64-linux-gnu;-lxkbcommon"
+		},
+		{
+			"name" : "PKG_XKB_LDFLAGS_OTHER",
 			"properties" : 
 			[
 				{
@@ -1707,7 +1755,31 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr/lib/x86_64-linux-gnu"
+		},
+		{
+			"name" : "PKG_XKB_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "xkbcommon"
+		},
+		{
+			"name" : "PKG_XKB_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
 		},
 		{
 			"name" : "PKG_XKB_LIBS",
@@ -1767,7 +1839,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "xkbcommon"
 		},
 		{
 			"name" : "PKG_XKB_PREFIX",
@@ -1779,7 +1851,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr"
 		},
 		{
 			"name" : "PKG_XKB_STATIC_CFLAGS",
@@ -1818,6 +1890,42 @@
 			"value" : ""
 		},
 		{
+			"name" : "PKG_XKB_STATIC_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_XKB_STATIC_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/lib/x86_64-linux-gnu;-lxkbcommon"
+		},
+		{
+			"name" : "PKG_XKB_STATIC_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
 			"name" : "PKG_XKB_STATIC_LIBDIR",
 			"properties" : 
 			[
@@ -1828,6 +1936,30 @@
 			],
 			"type" : "INTERNAL",
 			"value" : ""
+		},
+		{
+			"name" : "PKG_XKB_STATIC_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "xkbcommon"
+		},
+		{
+			"name" : "PKG_XKB_STATIC_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
 		},
 		{
 			"name" : "PKG_XKB_STATIC_LIBS",
@@ -1887,7 +2019,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "1.4.0"
 		},
 		{
 			"name" : "PKG_XKB_xkbcommon_INCLUDEDIR",
@@ -3834,6 +3966,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "QT_FEATURE_modbus_serialport",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: modbus_serialport (from target Qt6::SerialBus)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_movie",
 			"properties" : 
 			[
@@ -3948,6 +4092,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: no_direct_extern_access (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_ntddmodm",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: ntddmodm (from target Qt6::SerialPort)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -5274,6 +5430,30 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "QT_FEATURE_socketcan",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: socketcan (from target Qt6::SerialBus)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_socketcan_fd",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: socketcan_fd (from target Qt6::SerialBus)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_socks5",
 			"properties" : 
 			[
@@ -6534,6 +6714,30 @@
 			"value" : "/home/sevo/Qt/6.7.2/gcc_64/lib/cmake/Qt6Quick"
 		},
 		{
+			"name" : "Qt6SerialBus_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt6SerialBus."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/sevo/Qt/6.7.2/gcc_64/lib/cmake/Qt6SerialBus"
+		},
+		{
+			"name" : "Qt6SerialPort_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt6SerialPort."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/sevo/Qt/6.7.2/gcc_64/lib/cmake/Qt6SerialPort"
+		},
+		{
 			"name" : "Qt6_DIR",
 			"properties" : 
 			[
@@ -6619,7 +6823,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "XKB_INCLUDE_DIR-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "XKB_LIBRARY",
@@ -6631,7 +6835,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "XKB_LIBRARY-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon.so"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
@@ -6644,6 +6848,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "/usr/local"
+		},
+		{
+			"name" : "__pkg_config_arguments_PKG_XKB",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "QUIET;xkbcommon"
 		},
 		{
 			"name" : "__pkg_config_checked_PKG_XKB",
@@ -6668,6 +6884,34 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "/home/sevo/Qt/6.7.2/gcc_64/lib/cmake/Qt6Qml"
+		},
+		{
+			"name" : "pkgcfg_lib_PKG_XKB_xkbcommon",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon.so"
+		},
+		{
+			"name" : "prefix_result",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
 		}
 	],
 	"kind" : "cache",

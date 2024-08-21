@@ -9,22 +9,41 @@ ApplicationWindow {
 
     Gauge {
         id: gauge
-        value: speedController.speed  // Continuously update based on speedController.speed
-        maxValue: 250
-        anchors.fill: parent
-        anchors.margins: window.height * 0.2
+        maxValue: 100  // Set to match the scaled data range
+        anchors.centerIn: parent
+        width: 400  // Larger gauge size
+        height: 400
 
-        Behavior on value { NumberAnimation { duration: 100 }}
+        Behavior on value { NumberAnimation { duration: 100 } }
 
-        Component.onCompleted: {
-            forceActiveFocus();
-        }
+        // Update the digit display when the gauge value changes
+        onValueChanged: speedDigit.text = gauge.value.toFixed(0) + " km/h"
+    }
 
-        Keys.onSpacePressed: speedController.updateSpeed()
-        Keys.onReleased: {
-            if (event.key === Qt.Key_Space) {
-                event.accepted = true;
+    // Digit display positioned below the gauge
+    Text {
+        id: speedDigit
+        text: gauge.value.toFixed(0) + " km/h"  // Show speed with "km/h" suffix
+        font.pixelSize: 40  // Make the font size larger for better visibility
+        color: "white"
+        anchors.top: gauge.bottom
+        anchors.horizontalCenter: gauge.horizontalCenter
+        anchors.topMargin: 20  // Adjust margin to control spacing below the gauge
+        antialiasing: true
+    }
+
+    Connections {
+        target: canHandler
+
+        function onFrameReceived(frameId, payload) {
+            if (payload.length >= 2) {
+                var rawValue = payload[1];
+                var scaledValue = (rawValue / 255) * 100;
+                gauge.value = scaledValue;
             }
         }
     }
+
+
+
 }

@@ -9,7 +9,7 @@ Item {
 
     property real minValue: 0
     property real maxValue: 250
-    property real value: 120  // Add the value property
+    property real value: 0  // Bind this value to CAN data later
 
     Canvas {
         id: backgroundCanvas
@@ -62,15 +62,6 @@ Item {
     // Use property binding to trigger redraw
     onValueChanged: backgroundCanvas.requestPaint()
 
-    Text {
-        id: speedLabel
-        anchors.centerIn: parent
-        text: gauge.value.toFixed(0)
-        font.pixelSize: 40
-        color: "white"
-        antialiasing: true
-    }
-
     RowLayout {
         id: tickMarks
         anchors.fill: parent
@@ -91,14 +82,12 @@ Item {
         }
     }
 
-    Slider {
-        id: slider
-        from: gauge.minValue
-        to: gauge.maxValue
-        value: gauge.value
-        stepSize: 1
-        width: gauge.width
-        anchors.bottom: parent.bottom
-        onValueChanged: gauge.value = value
+    // Add this Connections element if you need to listen to signals from another source
+    Connections {
+        target: gauge
+
+        function onValueChanged(newValue) {
+            backgroundCanvas.requestPaint();  // Trigger repaint when value changes
+        }
     }
 }

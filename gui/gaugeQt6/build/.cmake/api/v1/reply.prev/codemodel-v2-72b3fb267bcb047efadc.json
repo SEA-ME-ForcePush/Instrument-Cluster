@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-945cb6de45f90d040c2c.json",
+					"jsonFile" : "directory-.-Debug-308d261993c711bf7f2f.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -42,7 +42,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "GaugeApp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-GaugeApp-Debug-b947592e722e7157b5da.json",
+					"jsonFile" : "target-GaugeApp-Debug-c182ee37716e2e262b8f.json",
 					"name" : "GaugeApp",
 					"projectIndex" : 0
 				},
