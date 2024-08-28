@@ -1,0 +1,26 @@
+{
+	"BUILD_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/GaugeApp_autogen",
+	"CMAKE_BINARY_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6",
+	"CMAKE_SOURCE_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6",
+	"INCLUDE_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/GaugeApp_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/Gauge.qml",
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/main.qml",
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/img/needle.svg",
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/img/tickmark.svg",
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/img/background.svg"
+	],
+	"LOCK_FILE" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/CMakeFiles/GaugeApp_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/home/sevo/Qt/6.7.2/gcc_64/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/CMakeFiles/GaugeApp_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/qml.qrc",
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-308d261993c711bf7f2f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "GaugeApp",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "GaugeApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GaugeApp-Debug-c182ee37716e2e262b8f.json",
+					"name" : "GaugeApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GaugeApp_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GaugeApp_autogen-Debug-ca9a702dd323ab36df35.json",
+					"name" : "GaugeApp_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build",
+		"source" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
