@@ -2,8 +2,7 @@ name: Build Project with Prebuilt Docker Image
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main, dev-ops ]
   pull_request:
     branches:
       - main
