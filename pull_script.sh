@@ -55,5 +55,3 @@ unzip $TMP_DIR/${ARTIFACT_NAME}.zip -d $DOWNLOAD_DIR
 chmod +x ./artifacts/InstrumentCluster
 
 echo "Artifacts updated successfully."
-
-                                                                                              48,0-1        Bot
