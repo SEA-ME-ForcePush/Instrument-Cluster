@@ -1,7 +1,7 @@
 #include "speedcontroller.h"
 
 SpeedController::SpeedController(QObject *parent)
-    : QObject(parent), m_speed(0)
+    : QObject(parent), m_speed(0), m_kalmanFilter(0.1, 0.1)
 {
     // Set up the timer to call updateSpeed every 100 ms (10 times per second)
     connect(&m_timer, &QTimer::timeout, this, &SpeedController::updateSpeed);
@@ -30,4 +30,17 @@ void SpeedController::updateSpeed()
         newSpeed = 0; // Reset to 0 if it exceeds the maximum value
     }
     setSpeed(newSpeed); // This will emit speedChanged and update the gauge
+}
+
+void SpeedController::updateSpeedWithFilter()
+{
+    // Example: Simulated new speed reading, normally this would be actual sensor data
+    double rawSpeed = m_speed + 1; // Increment speed by 1 each time
+    if (rawSpeed > 250) {
+        rawSpeed = 0; // Reset to 0 if it exceeds the maximum value
+    }
+
+    // Apply Kalman filter to the raw speed measurement
+    double filteredSpeed = m_kalmanFilter.update(rawSpeed);
+    setSpeed(filteredSpeed); // This will emit speedChanged and update the gauge
 }
