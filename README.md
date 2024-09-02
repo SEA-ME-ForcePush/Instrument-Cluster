@@ -45,3 +45,39 @@ You can check rpm rate by clicking the serialMonitor (Tool > serialMonitor) belo
 - if we want to use 5V, we need to use the `VCC1` instead of `VCC`. (recommended)
 - we should give the delays to make time to receive the data from the sender arduino. -> sender and the reciever arduino has to put the same delay time. (for our code, `delay(1000)`).
 
+## 0x. Implementation of the Kalman filter (2 September 2024)
+
+The Kalman filter is an algorithm that provides an efficient computational means to estimate the state of a process in a way that minimizes the mean of the squared error. It is widely used in control systems, navigation, and time-series prediction due to its effectiveness in filtering out noise from measurements.
+
+The Kalman filter assumes that the true state of the system is governed by a linear dynamic system model, which is described by:
+
+- State Transition Model: This model predicts the next state of the system based on the current state.
+- Measurement Model: This relates the state of the system to the measurements we observe.
+  
+The Kalman filter operates in two main steps:
+- 1. Prediction Step:
+  * Predict the next state of the system.
+  * Predict the error covariance, which gives an estimate of the uncertainty.
+- 2. Update Step:
+  * Compute the Kalman Gain, which tells how much weight should be given to the new measurement versus the prediction.
+  * Update the state estimate using the measurement.
+  * Update the error covariance.
+ 
+So the core of the Kalman filter class, that we implemented, is the member function 
+``` 
+double KalmanFilter::update(double measurement)
+{
+	// Prediction update
+	P = P + Q;
+
+	// Measurement update
+	double K = P / (P + R); // Kalman gain
+	X = X + K * (measurement - X);
+	P = (1 - K) * P;
+
+	return X;
+}
+```
+with Q: process noise covariance, R: the measurement noise covariance, P: error covariance and X: estimated value.
+
+The Kalman filter is used between the reading of the CAN data and the conversion from rounds per minute to speed.
