@@ -1,17 +1,30 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(instrument-cluster VERSION 0.1 LANGUAGES CXX)
+project(GaugeApp VERSION 1.0 LANGUAGES CXX)
 
-set(CMAKE_AUTOUIC ON)
+# Enable automatic Qt processing
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
+# Set the C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick SerialBus)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick SerialBus)
+# Find required Qt modules
+find_package(Qt6 COMPONENTS Core Gui Qml Quick QuickControls2 Network SerialBus REQUIRED)
 
+# Add the executable and include all necessary files
+add_executable(InstrumentCluster
+    src/main.cpp
+    src/qml.qrc
+    src/CanHandler.h
+    src/CanHandler.cpp  # Ensure consistent naming for the source file
+    src/KalmanFilter.cpp
+    src/KalmanFilter.h
+)
+
+# Link necessary Qt libraries
 target_link_libraries(InstrumentCluster
     Qt6::Core
     Qt6::Gui
@@ -19,61 +32,11 @@ target_link_libraries(InstrumentCluster
     Qt6::Quick
     Qt6::QuickControls2
     Qt6::Network
-    Qt6::SerialBus)
-
-set(PROJECT_SOURCES
-    src/main.cpp
-    src/qml.qrc
-    src/CanHandler.h
-    src/CanHandler.cpp  # Ensure consistent naming for the source file
-    src/KalmanFilter.cpp
-    src/KalmanFilter.h                                                                                                                                  
+    Qt6::SerialBus
 )
 
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(InstrumentCluster
-        MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
-    )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET InstrumentCluster APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
-else()
-    if(ANDROID)
-        add_library(InstrumentCluster SHARED
-            ${PROJECT_SOURCES}
-        )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
-    else()
-        add_executable(InstrumentCluster
-          ${PROJECT_SOURCES}
-        )
-    endif()
-endif()
-
-
-# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
-# If you are developing for iOS or macOS you should consider setting an
-# explicit, fixed bundle identifier manually though.
-if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.InstrumentCluster)
-endif()
-set_target_properties(InstrumentCluster PROPERTIES
-    ${BUNDLE_ID_OPTION}
-    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
-    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
-    MACOSX_BUNDLE TRUE
-    WIN32_EXECUTABLE TRUE
-)
-
-include(GNUInstallDirs)
+# Installation rules
 install(TARGETS InstrumentCluster
     BUNDLE DESTINATION .
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
-
-if(QT_VERSION_MAJOR EQUAL 6)
-    qt_import_qml_plugins(InstrumentCluster)
-    qt_finalize_executable(InstrumentCluster)
-endif()
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}  # Ensure CMAKE_INSTALL_BINDIR is defined or adjust as needed
+)
