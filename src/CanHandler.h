@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QCanBusDevice>
 #include <QCanBusFrame>
+#include "KalmanFilter.h"  // Include KalmanFilter header
 
 class CanHandler : public QObject
 {
@@ -20,12 +21,12 @@ public:
 signals:
     void frameReceived(uint frameId, QList<int> payload);
 
-
 private slots:
     void processFrames();
 
 private:
     QCanBusDevice *canDevice;
+    KalmanFilter *kalmanFilter;  // Add KalmanFilter as a member
 };
 
 #endif // CANHANDLER_H

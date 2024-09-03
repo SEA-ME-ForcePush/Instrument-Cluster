@@ -1,4 +1,5 @@
 #include "CanHandler.h"
+#include "KalmanFilter.h"
 #include <QCanBus>
 #include <QDebug>
 #include <QList>
@@ -12,6 +13,9 @@ CanHandler::CanHandler(const QString &interfaceName, QObject *parent)
     if (!canDevice) {
         qWarning() << "Failed to create CAN device:" << errorString;
     }
+
+    // Initialize KalmanFilter with chosen parameters
+    kalmanFilter = new KalmanFilter(1.0, 1.0, 0.1, 0.0);  // Example initialization values
 }
 
 CanHandler::~CanHandler()
@@ -20,6 +24,7 @@ CanHandler::~CanHandler()
         disconnectDevice();
         delete canDevice;
     }
+    delete kalmanFilter;  // Clean up KalmanFilter
 }
 
 bool CanHandler::connectDevice()
@@ -66,9 +71,12 @@ void CanHandler::processFrames()
         QList<int> payloadList;
         QByteArray payload = frame.payload();
         for (char byte : payload) {
-            payloadList.append(static_cast<int>(static_cast<unsigned char>(byte)));
+            // Use the Kalman filter to process each byte of the payload
+            int filteredValue = static_cast<int>(kalmanFilter->update(static_cast<float>(static_cast<unsigned char>(byte))));
+            payloadList.append(filteredValue);
         }
 
         emit frameReceived(frame.frameId(), payloadList);
     }
 }
+

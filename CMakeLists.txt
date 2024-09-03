@@ -9,18 +9,20 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Ensure that Qt SerialBus is found
+# Ensure Qt SerialBus is found
 find_package(Qt5 COMPONENTS Core Gui Qml Quick SerialBus REQUIRED)
 
-add_executable(InstrumentCluster
+add_executable(GaugeApp
     src/main.cpp
     src/qml.qrc
     src/CanHandler.cpp
     src/CanHandler.h
+    src/KalmanFilter.cpp   # Add KalmanFilter source file
+    src/KalmanFilter.h     # Add KalmanFilter header file
 )
 
 # Link SerialBus to your application
-target_link_libraries(InstrumentCluster
+target_link_libraries(GaugeApp
     Qt5::Core
     Qt5::Gui
     Qt5::Qml
@@ -28,7 +30,8 @@ target_link_libraries(InstrumentCluster
     Qt5::SerialBus
 )
 
-install(TARGETS InstrumentCluster
+install(TARGETS GaugeApp
     BUNDLE DESTINATION .
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+
