@@ -9,20 +9,23 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt5 COMPONENTS Core Gui Qml Quick REQUIRED)
+# Ensure that Qt SerialBus is found
+find_package(Qt5 COMPONENTS Core Gui Qml Quick SerialBus REQUIRED)
 
 add_executable(GaugeApp
-    main.cpp
-    speedcontroller.cpp
-    qml.qrc
-    speedcontroller.h
+    src/main.cpp
+    src/qml.qrc
+    src/CanHandler.cpp
+    src/CanHandler.h
 )
 
+# Link SerialBus to your application
 target_link_libraries(GaugeApp
     Qt5::Core
     Qt5::Gui
     Qt5::Qml
     Qt5::Quick
+    Qt5::SerialBus
 )
 
 install(TARGETS GaugeApp

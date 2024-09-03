@@ -3,7 +3,6 @@
 
 #include <QObject>
 #include <QTimer>
-#include "KalmanFilter.h"
 
 class SpeedController : public QObject
 {
@@ -21,12 +20,10 @@ signals:
 
 public slots:
     void updateSpeed();  // Slot to update speed periodically
-    void updateSpeedWithFilter(); // Slot to update speed periodically with Kalman filter
 
 private:
     double m_speed;
     QTimer m_timer;  // Timer to trigger updates
-    KalmanFilter m_kalmanFilter; 
 };
 
 #endif // SPEEDCONTROLLER_H

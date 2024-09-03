@@ -1,0 +1,26 @@
+{
+	"BUILD_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/build/GaugeApp_autogen",
+	"CMAKE_BINARY_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5",
+	"CMAKE_SOURCE_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5",
+	"INCLUDE_DIR" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/build/GaugeApp_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/src/Gauge.qml",
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/src/main.qml",
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/src/img/needle.svg",
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/src/img/background.svg",
+		"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/src/img/tickmark.svg"
+	],
+	"LOCK_FILE" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/build/CMakeFiles/GaugeApp_autogen.dir/AutoRcc_qml_UVLADIE3JM_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "UVLADIE3JM",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/build/CMakeFiles/GaugeApp_autogen.dir/AutoRcc_qml_UVLADIE3JM_Used.txt",
+	"SOURCE" : "/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt5/src/qml.qrc",
+	"VERBOSITY" : 0
+}
