@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     // Instantiate the CAN handler
-    CanHandler canHandler("vcan0"); // Use the appropriate interface name
+    CanHandler canHandler("can0"); // Use the appropriate interface name
 
     // Connect to the CAN device
     if (!canHandler.connectDevice()) {
