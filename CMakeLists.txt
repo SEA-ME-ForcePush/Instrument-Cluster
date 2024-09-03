@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Ensure that Qt SerialBus is found
 find_package(Qt5 COMPONENTS Core Gui Qml Quick SerialBus REQUIRED)
 
-add_executable(GaugeApp
+add_executable(InstrumentCluster
     src/main.cpp
     src/qml.qrc
     src/CanHandler.cpp
@@ -20,7 +20,7 @@ add_executable(GaugeApp
 )
 
 # Link SerialBus to your application
-target_link_libraries(GaugeApp
+target_link_libraries(InstrumentCluster
     Qt5::Core
     Qt5::Gui
     Qt5::Qml
@@ -28,7 +28,7 @@ target_link_libraries(GaugeApp
     Qt5::SerialBus
 )
 
-install(TARGETS GaugeApp
+install(TARGETS InstrumentCluster
     BUNDLE DESTINATION .
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
