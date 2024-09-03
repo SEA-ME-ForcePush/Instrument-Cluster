@@ -15,7 +15,7 @@ CanHandler::CanHandler(const QString &interfaceName, QObject *parent)
     }
 
     // Initialize KalmanFilter with chosen parameters
-    kalmanFilter = new KalmanFilter(0.5, 5.0, 0.1, 0.0);  // Example initialization values
+    kalmanFilter = new KalmanFilter(1.0, 5.0, 10.0, 0.0);  // Example initialization values
 }
 
 CanHandler::~CanHandler()
