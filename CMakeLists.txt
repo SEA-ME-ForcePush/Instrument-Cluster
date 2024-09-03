@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick SerialBus)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick SerialBus)
 
-target_link_libraries(instrument-cluster 
+target_link_libraries(InstrumentCluster
     Qt6::Core
     Qt6::Gui
     Qt6::Qml
