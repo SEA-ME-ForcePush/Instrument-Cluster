@@ -44,7 +44,7 @@ else()
     endif()
 endif()
 
-target_link_libraries(GaugeApp
+target_link_libraries(
     Qt6::Core
     Qt6::Gui
     Qt6::Qml
