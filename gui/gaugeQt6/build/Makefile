@@ -187,6 +187,30 @@ GaugeApp_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp_autogen.dir/build.make CMakeFiles/GaugeApp_autogen.dir/build
 .PHONY : GaugeApp_autogen/fast
 
+CanHandler.o: CanHandler.cpp.o
+.PHONY : CanHandler.o
+
+# target to build an object file
+CanHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/CanHandler.cpp.o
+.PHONY : CanHandler.cpp.o
+
+CanHandler.i: CanHandler.cpp.i
+.PHONY : CanHandler.i
+
+# target to preprocess a source file
+CanHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/CanHandler.cpp.i
+.PHONY : CanHandler.cpp.i
+
+CanHandler.s: CanHandler.cpp.s
+.PHONY : CanHandler.s
+
+# target to generate assembly for a file
+CanHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/CanHandler.cpp.s
+.PHONY : CanHandler.cpp.s
+
 GaugeApp_autogen/EWIEGA46WW/qrc_qml.o: GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.o
 .PHONY : GaugeApp_autogen/EWIEGA46WW/qrc_qml.o
 
@@ -259,30 +283,6 @@ KalmanFilter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.s
 .PHONY : KalmanFilter.cpp.s
 
-canhandler.o: canhandler.cpp.o
-.PHONY : canhandler.o
-
-# target to build an object file
-canhandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/canhandler.cpp.o
-.PHONY : canhandler.cpp.o
-
-canhandler.i: canhandler.cpp.i
-.PHONY : canhandler.i
-
-# target to preprocess a source file
-canhandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/canhandler.cpp.i
-.PHONY : canhandler.cpp.i
-
-canhandler.s: canhandler.cpp.s
-.PHONY : canhandler.s
-
-# target to generate assembly for a file
-canhandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/canhandler.cpp.s
-.PHONY : canhandler.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -321,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... GaugeApp_autogen"
 	@echo "... GaugeApp"
+	@echo "... CanHandler.o"
+	@echo "... CanHandler.i"
+	@echo "... CanHandler.s"
 	@echo "... GaugeApp_autogen/EWIEGA46WW/qrc_qml.o"
 	@echo "... GaugeApp_autogen/EWIEGA46WW/qrc_qml.i"
 	@echo "... GaugeApp_autogen/EWIEGA46WW/qrc_qml.s"
@@ -330,9 +333,6 @@ help:
 	@echo "... KalmanFilter.o"
 	@echo "... KalmanFilter.i"
 	@echo "... KalmanFilter.s"
-	@echo "... canhandler.o"
-	@echo "... canhandler.i"
-	@echo "... canhandler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

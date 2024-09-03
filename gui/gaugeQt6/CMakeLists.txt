@@ -18,8 +18,8 @@ find_package(Qt6 COMPONENTS Core Gui Qml Quick QuickControls2 Network SerialBus 
 add_executable(GaugeApp
     main.cpp
     qml.qrc
-    canhandler.h
-    canhandler.cpp  # Ensure consistent naming for the source file
+    CanHandler.h
+    CanHandler.cpp  # Ensure consistent naming for the source file
     KalmanFilter.cpp
     KalmanFilter.h
 )

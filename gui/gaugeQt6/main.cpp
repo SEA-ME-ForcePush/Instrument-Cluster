@@ -1,7 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include "canhandler.h"
+#include "CanHandler.h"
 
 int main(int argc, char *argv[])
 {
@@ -10,8 +10,8 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     // Create the CanHandler instance using virtual CAN (vcan0)
-//    CanHandler canHandler("vcan0");     //virtual CAN you have to setup first
-    CanHandler canHandler("can0");      //actual CAN on vehicle
+    CanHandler canHandler("vcan0");     //virtual CAN you have to setup first
+//    CanHandler canHandler("can0");      //actual CAN on vehicle
 
     // Attempt to connect to the CAN bus
     if (!canHandler.connectDevice()) {

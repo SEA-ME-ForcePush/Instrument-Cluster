@@ -1,4 +1,4 @@
-#include "canhandler.h"
+#include "CanHandler.h"
 #include <QCanBus>
 #include <QDebug>
 #include <QList>

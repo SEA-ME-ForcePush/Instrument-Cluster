@@ -108,19 +108,19 @@ CMakeFiles/GaugeApp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaugeApp.dir/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/main.cpp -o CMakeFiles/GaugeApp.dir/main.cpp.s
 
-CMakeFiles/GaugeApp.dir/canhandler.cpp.o: CMakeFiles/GaugeApp.dir/flags.make
-CMakeFiles/GaugeApp.dir/canhandler.cpp.o: ../canhandler.cpp
-CMakeFiles/GaugeApp.dir/canhandler.cpp.o: CMakeFiles/GaugeApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GaugeApp.dir/canhandler.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GaugeApp.dir/canhandler.cpp.o -MF CMakeFiles/GaugeApp.dir/canhandler.cpp.o.d -o CMakeFiles/GaugeApp.dir/canhandler.cpp.o -c /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp
+CMakeFiles/GaugeApp.dir/CanHandler.cpp.o: CMakeFiles/GaugeApp.dir/flags.make
+CMakeFiles/GaugeApp.dir/CanHandler.cpp.o: ../CanHandler.cpp
+CMakeFiles/GaugeApp.dir/CanHandler.cpp.o: CMakeFiles/GaugeApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GaugeApp.dir/CanHandler.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GaugeApp.dir/CanHandler.cpp.o -MF CMakeFiles/GaugeApp.dir/CanHandler.cpp.o.d -o CMakeFiles/GaugeApp.dir/CanHandler.cpp.o -c /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/CanHandler.cpp
 
-CMakeFiles/GaugeApp.dir/canhandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaugeApp.dir/canhandler.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp > CMakeFiles/GaugeApp.dir/canhandler.cpp.i
+CMakeFiles/GaugeApp.dir/CanHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaugeApp.dir/CanHandler.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/CanHandler.cpp > CMakeFiles/GaugeApp.dir/CanHandler.cpp.i
 
-CMakeFiles/GaugeApp.dir/canhandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaugeApp.dir/canhandler.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp -o CMakeFiles/GaugeApp.dir/canhandler.cpp.s
+CMakeFiles/GaugeApp.dir/CanHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaugeApp.dir/CanHandler.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/CanHandler.cpp -o CMakeFiles/GaugeApp.dir/CanHandler.cpp.s
 
 CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.o: CMakeFiles/GaugeApp.dir/flags.make
 CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.o: ../KalmanFilter.cpp
@@ -154,7 +154,7 @@ CMakeFiles/GaugeApp.dir/GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.s: cmake_force
 GaugeApp_OBJECTS = \
 "CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/GaugeApp.dir/main.cpp.o" \
-"CMakeFiles/GaugeApp.dir/canhandler.cpp.o" \
+"CMakeFiles/GaugeApp.dir/CanHandler.cpp.o" \
 "CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.o" \
 "CMakeFiles/GaugeApp.dir/GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.o"
 
@@ -163,7 +163,7 @@ GaugeApp_EXTERNAL_OBJECTS =
 
 GaugeApp: CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.o
 GaugeApp: CMakeFiles/GaugeApp.dir/main.cpp.o
-GaugeApp: CMakeFiles/GaugeApp.dir/canhandler.cpp.o
+GaugeApp: CMakeFiles/GaugeApp.dir/CanHandler.cpp.o
 GaugeApp: CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.o
 GaugeApp: CMakeFiles/GaugeApp.dir/GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.o
 GaugeApp: CMakeFiles/GaugeApp.dir/build.make

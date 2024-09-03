@@ -883,15 +883,15 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.h",
+			"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/CanHandler.h",
 			"MU",
-			"EWIEGA46WW/moc_KalmanFilter.cpp",
+			"EWIEGA46WW/moc_CanHandler.cpp",
 			null
 		],
 		[
-			"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.h",
+			"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.h",
 			"MU",
-			"EWIEGA46WW/moc_canhandler.cpp",
+			"EWIEGA46WW/moc_KalmanFilter.cpp",
 			null
 		]
 	],
@@ -977,12 +977,12 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.cpp",
+			"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/CanHandler.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp",
+			"/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.cpp",
 			"MU",
 			null
 		],

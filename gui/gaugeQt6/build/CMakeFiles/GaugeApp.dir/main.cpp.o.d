@@ -383,7 +383,7 @@ CMakeFiles/GaugeApp.dir/main.cpp.o: \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtQml/qqmlabstracturlinterceptor.h \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtQml/QQmlContext \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtQml/qqmlcontext.h \
- /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.h \
+ /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/CanHandler.h \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/QObject \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qobject.h \
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/QCanBusDevice \
