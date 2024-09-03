@@ -357,6 +357,7 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
 /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/speedcontroller.cpp
+/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.cpp
 /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/speedcontroller.h
  mmc:Q_OBJECT
  mdp:/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/speedcontroller.h
@@ -710,3 +711,4 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
 /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp
 /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/main.cpp
+/home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.h

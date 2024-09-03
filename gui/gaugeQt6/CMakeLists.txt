@@ -20,6 +20,8 @@ add_executable(GaugeApp
     qml.qrc
     canhandler.h
     canhandler.cpp  # Ensure consistent naming for the source file
+    KalmanFilter.cpp
+    KalmanFilter.h
 )
 
 # Link necessary Qt libraries

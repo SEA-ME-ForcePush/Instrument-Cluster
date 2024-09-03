@@ -235,6 +235,30 @@ GaugeApp_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.s
 .PHONY : GaugeApp_autogen/mocs_compilation.cpp.s
 
+KalmanFilter.o: KalmanFilter.cpp.o
+.PHONY : KalmanFilter.o
+
+# target to build an object file
+KalmanFilter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.o
+.PHONY : KalmanFilter.cpp.o
+
+KalmanFilter.i: KalmanFilter.cpp.i
+.PHONY : KalmanFilter.i
+
+# target to preprocess a source file
+KalmanFilter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.i
+.PHONY : KalmanFilter.cpp.i
+
+KalmanFilter.s: KalmanFilter.cpp.s
+.PHONY : KalmanFilter.s
+
+# target to generate assembly for a file
+KalmanFilter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaugeApp.dir/build.make CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.s
+.PHONY : KalmanFilter.cpp.s
+
 canhandler.o: canhandler.cpp.o
 .PHONY : canhandler.o
 
@@ -303,6 +327,9 @@ help:
 	@echo "... GaugeApp_autogen/mocs_compilation.o"
 	@echo "... GaugeApp_autogen/mocs_compilation.i"
 	@echo "... GaugeApp_autogen/mocs_compilation.s"
+	@echo "... KalmanFilter.o"
+	@echo "... KalmanFilter.i"
+	@echo "... KalmanFilter.s"
 	@echo "... canhandler.o"
 	@echo "... canhandler.i"
 	@echo "... canhandler.s"

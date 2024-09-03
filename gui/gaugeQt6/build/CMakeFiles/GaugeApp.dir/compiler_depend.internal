@@ -379,9 +379,15 @@ CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.o
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qshareddata.h
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/QCanBusFrame
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusframe.h
+ /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.h
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/QList
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qlist.h
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qtmochelpers.h
+
+CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.o
+ /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.cpp
+ /usr/include/stdc-predef.h
+ /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.h
 
 CMakeFiles/GaugeApp.dir/canhandler.cpp.o
  /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/canhandler.cpp
@@ -756,6 +762,7 @@ CMakeFiles/GaugeApp.dir/canhandler.cpp.o
  /home/sevo/Qt/6.7.2/gcc_64/include/QtCore/qshareddata.h
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/QCanBusFrame
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusframe.h
+ /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.h
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/QCanBus
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbus.h
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusdevice.h
@@ -1232,4 +1239,5 @@ CMakeFiles/GaugeApp.dir/main.cpp.o
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusdeviceinfo.h
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/QCanBusFrame
  /home/sevo/Qt/6.7.2/gcc_64/include/QtSerialBus/qcanbusframe.h
+ /home/sevo/Desktop/Instrument-Cluster/gui/gaugeQt6/KalmanFilter.h
 

@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GaugeApp.dir/GaugeApp_autogen/EWIEGA46WW/qrc_qml.cpp.o.d"
   "CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/GaugeApp.dir/GaugeApp_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.o"
+  "CMakeFiles/GaugeApp.dir/KalmanFilter.cpp.o.d"
   "CMakeFiles/GaugeApp.dir/canhandler.cpp.o"
   "CMakeFiles/GaugeApp.dir/canhandler.cpp.o.d"
   "CMakeFiles/GaugeApp.dir/main.cpp.o"
