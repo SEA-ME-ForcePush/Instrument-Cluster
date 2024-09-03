@@ -13,7 +13,12 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick SerialBus)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick SerialBus)
 
 set(PROJECT_SOURCES
-        src/main.cpp                                                                                                                                     
+    src/main.cpp
+    src/qml.qrc
+    src/CanHandler.h
+    src/CanHandler.cpp  # Ensure consistent naming for the source file
+    src/KalmanFilter.cpp
+    src/KalmanFilter.h                                                                                                                                  
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -39,8 +44,14 @@ else()
     endif()
 endif()
 
-target_link_libraries(InstrumentCluster
-  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick Qt${QT_VERSION_MAJOR}::SerialBus)
+target_link_libraries(GaugeApp
+    Qt6::Core
+    Qt6::Gui
+    Qt6::Qml
+    Qt6::Quick
+    Qt6::QuickControls2
+    Qt6::Network
+    Qt6::SerialBus)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
