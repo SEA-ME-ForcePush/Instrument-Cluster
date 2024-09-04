@@ -20,6 +20,7 @@ signals:
 
 public slots:
     void updateSpeed();  // Slot to update speed periodically
+    void updateSpeedWithFilter(); // Slot to update speed periodically with Kalman filter
 
 private:
     double m_speed;
