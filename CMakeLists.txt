@@ -19,6 +19,8 @@ add_executable(InstrumentCluster
     src/CanHandler.h
     src/KalmanFilter.cpp   # Add KalmanFilter source file
     src/KalmanFilter.h     # Add KalmanFilter header file
+    src/SpeedController.cpp
+    Src/SpeedController.h
 )
 
 # Link SerialBus to your application
