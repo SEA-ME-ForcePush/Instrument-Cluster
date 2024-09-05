@@ -2,6 +2,7 @@
 #define SPEEDCONTROLLER_H
 
 #include <QObject>
+#include "KalmanFilter.h"
 
 class SpeedController : public QObject
 {
