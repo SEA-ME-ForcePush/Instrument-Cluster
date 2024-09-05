@@ -2,7 +2,6 @@
 #define SPEEDCONTROLLER_H
 
 #include <QObject>
-#include <QTimer>
 
 class SpeedController : public QObject
 {
@@ -19,12 +18,11 @@ signals:
     void speedChanged();
 
 public slots:
-    void updateSpeed();  // Slot to update speed periodically
-    void updateSpeedWithFilter(); // Slot to update speed periodically with Kalman filter
+    void onFrameReceived(int frameId, const QList<int> &payload); 
 
 private:
     double m_speed;
-    QTimer m_timer;  // Timer to trigger updates
+    KalmanFilter    m_kalmanFilter;
 };
 
 #endif // SPEEDCONTROLLER_H
