@@ -27,8 +27,8 @@ public:
 
 signals:
     void speedChanged();
-//    void kalmanFilterEnabledChanged();
-//    void wheelDiameterChanged();
+    void kalmanFilterEnabledChanged();
+    void wheelDiameterChanged();
 
 public slots:
     void onFrameReceived(int frameId, const QList<int> &payload); 

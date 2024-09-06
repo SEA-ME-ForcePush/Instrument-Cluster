@@ -27,7 +27,7 @@ void SpeedController::setKalmanFilterEnabled(bool enabled)
 {
     if (m_kalmanFilterEnabled != enabled) {
         m_kalmanFilterEnabled = enabled;
-//        emit kalmanFilterEnabledChanged();
+        emit kalmanFilterEnabledChanged();
     }
 }
 
@@ -50,7 +50,7 @@ void SpeedController::setWheelDiameter(float diameter)
 {
     if (!qFuzzyCompare(m_wheelDiameter, diameter)) {
         m_wheelDiameter = diameter;
-//        emit wheelDiameterChanged();
+        emit wheelDiameterChanged();
     }
 }
 
