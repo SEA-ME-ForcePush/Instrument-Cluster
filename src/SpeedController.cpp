@@ -1,7 +1,7 @@
 #include "SpeedController.h"
 
 SpeedController::SpeedController(QObject *parent)
-    : QObject(parent), m_speed(0), m_kalmanFilter(0.1, 0.1) {}
+    : QObject(parent), m_speed(0), m_kalmanFilter(0.1, 0.1, 1.0, 0.0) {}
 
 double SpeedController::speed() const
 {
