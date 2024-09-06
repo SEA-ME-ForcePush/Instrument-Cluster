@@ -45,7 +45,7 @@ void loop()
     memcpy(rpmData, &rpm, 4);
     CAN.sendMsgBuf(0x100, 0, 4, rpmData);
 
-    delay(1000);
+    delay(100);
 }
 
 void count()
