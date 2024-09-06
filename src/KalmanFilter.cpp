@@ -5,6 +5,32 @@ KalmanFilter::KalmanFilter(float processNoise, float measurementNoise, float est
 {
 }
 
+/*Getters*/
+float KalmanFilter::getProcessNoise() const
+{
+    return (this->processNoise);
+}
+
+float KalmanFilter::getMeasurementNoise() const
+{
+    return (this->measurementNoise);
+}
+
+float KalmanFilter::getEstimationError() const
+{
+    return (this->estimationError);    
+}
+/*Setters*/
+void KalmanFilter::setProcessNoise(float processNoise)
+{
+    this->processNoise = processNoise;
+}
+
+void KalmanFilter::setMeasurementNoise(float measurementNoise)
+{
+    this->measurementNoise = measurementNoise;
+}
+
 float KalmanFilter::update(float measurement)
 {
     // Prediction update
