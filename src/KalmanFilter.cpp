@@ -1,8 +1,11 @@
 #include "KalmanFilter.h"
 
 KalmanFilter::KalmanFilter(float processNoise, float measurementNoise, float estimationError, float initialValue)
-    : processNoise(processNoise), measurementNoise(measurementNoise), estimationError(estimationError), currentEstimate(initialValue), lastEstimate(initialValue), kalmanGain(0.0)
 {
+    state = {initialValue, 0.0}; // Initialize speed with initial value, acceleration is assumed 0
+    estimationErrorCovariance = {{estimationError, 0.0}, {0.0, estimationError}};
+    processNoiseCovariance = {{processNoise, 0.0}, {0.0, processNoise}};
+    measurementNoise = measurementNoise;
 }
 
 /*Getters*/
@@ -16,10 +19,17 @@ float KalmanFilter::getMeasurementNoise() const
     return (this->measurementNoise);
 }
 
-float KalmanFilter::getEstimationError() const
+float KalmanFilter::getSpeed() const 
 {
-    return (this->estimationError);    
+    return state[0];
 }
+
+float KalmanFilter::getAcceleration() const 
+{
+    return state[1];
+}
+
+
 /*Setters*/
 void KalmanFilter::setProcessNoise(float processNoise)
 {
@@ -31,19 +41,31 @@ void KalmanFilter::setMeasurementNoise(float measurementNoise)
     this->measurementNoise = measurementNoise;
 }
 
-float KalmanFilter::update(float measurement)
+float KalmanFilter::update(float measurement, float deltaTime)
 {
-    // Prediction update
-    estimationError += processNoise;
+    // Predict Step
+    state[0] = state[0] + deltaTime * state[1]; // speed = speed + acceleration * dt
+    estimationErrorCovariance[0][0] += deltaTime * (estimationErrorCovariance[1][1] + processNoiseCovariance[0][0]);
+    estimationErrorCovariance[0][1] += deltaTime * estimationErrorCovariance[1][1];
+    estimationErrorCovariance[1][0] += deltaTime * estimationErrorCovariance[1][1];
+    estimationErrorCovariance[1][1] += processNoiseCovariance[1][1];
 
-    // Measurement update
-    kalmanGain = estimationError / (estimationError + measurementNoise);
-    currentEstimate = lastEstimate + kalmanGain * (measurement - lastEstimate);
-    estimationError = (1.0 - kalmanGain) * estimationError;
+    // Calculate Kalman Gain
+    float S = estimationErrorCovariance[0][0] + measurementNoise; // Measurement variance
+    kalmanGain[0] = estimationErrorCovariance[0][0] / S;
+    kalmanGain[1] = estimationErrorCovariance[1][0] / S;
 
-    // Save estimate for next iteration
-    lastEstimate = currentEstimate;
+    // Update Step
+    float residual = measurement - state[0];
+    state[0] += kalmanGain[0] * residual;
+    state[1] += kalmanGain[1] * residual;
 
-    return currentEstimate;
+    // Update error covariance matrix
+    estimationErrorCovariance[0][0] *= (1.0 - kalmanGain[0]);
+    estimationErrorCovariance[0][1] *= (1.0 - kalmanGain[0]);
+    estimationErrorCovariance[1][0] -= kalmanGain[1] * estimationErrorCovariance[0][0];
+    estimationErrorCovariance[1][1] -= kalmanGain[1] * estimationErrorCovariance[0][1];
+
+    return state[0];
 }
 
