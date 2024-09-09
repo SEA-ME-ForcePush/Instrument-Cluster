@@ -1,11 +1,13 @@
 #include "KalmanFilter.h"
 
 KalmanFilter::KalmanFilter(float processNoise, float measurementNoise, float estimationError, float initialValue)
+    : processNoise(processNoise), 
+      measurementNoise(measurementNoise),
+      estimationErrorCovariance({{{estimationError, 0.0f}, {0.0f, estimationError}}}), // Correct initialization
+      processNoiseCovariance({{{processNoise, 0.0f}, {0.0f, processNoise}}}), // Correct initialization
+      kalmanGain({0.0f, 0.0f}),
+      state({initialValue, 0.0f}) // Initial state: speed = initialValue, acceleration = 0
 {
-    state = {initialValue, 0.0}; // Initialize speed with initial value, acceleration is assumed 0
-    estimationErrorCovariance = {{estimationError, 0.0}, {0.0, estimationError}};
-    processNoiseCovariance = {{processNoise, 0.0}, {0.0, processNoise}};
-    measurementNoise = measurementNoise;
 }
 
 /*Getters*/
