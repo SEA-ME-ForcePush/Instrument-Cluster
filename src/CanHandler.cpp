@@ -70,11 +70,15 @@ void CanHandler::processFrames()
         // Convert QByteArray to QList<int>
         QList<int> payloadList;
         QByteArray payload = frame.payload();
+        qDebug() << "payload.data : " << payload.data();
+
         for (char byte : payload) {
             // Use the Kalman filter to process each byte of the payload
             int filteredValue = static_cast<int>(kalmanFilter->update(static_cast<float>(static_cast<unsigned char>(byte))));
             payloadList.append(filteredValue);
         }
+
+        qDebug() << "payloadList : " << payloadList;
 
         emit frameReceived(frame.frameId(), payloadList);
     }
