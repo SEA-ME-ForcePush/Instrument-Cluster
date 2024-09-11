@@ -72,15 +72,21 @@ void CanHandler::processFrames()
         QByteArray payload = frame.payload();
         qDebug() << "payload.data : " << payload.data();
 
-        for (char byte : payload) {
-            // Use the Kalman filter to process each byte of the payload
-            int filteredValue = static_cast<int>(kalmanFilter->update(static_cast<float>(static_cast<unsigned char>(byte))));
-            payloadList.append(filteredValue);
-        }
+        double rpm;
+        memcpy(&rpm, frame.payload());
+        qDebug() << "rpm : " << rpm ;
 
-        qDebug() << "payloadList : " << payloadList;
+        float speed = 2 * 3.14 * 6.7 * rpm / 60;
 
-        emit frameReceived(frame.frameId(), payloadList);
+        speed = kalmanFilter->update( speed);
+
+        // for (char byte : payload) {
+        //     // Use the Kalman filter to process each byte of the payload
+        //     int filteredValue = static_cast<int>(kalmanFilter->update(static_cast<float>(static_cast<unsigned char>(byte))));
+        //     payloadList.append(filteredValue);
+        // }
+
+        emit frameReceived(frame.frameId(), speed);
     }
 }
 

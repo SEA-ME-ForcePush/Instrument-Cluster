@@ -123,14 +123,17 @@ CircularGauge {
     // Connections to handle signals from CanHandler
     Connections {
         target: canHandler
-        function onFrameReceived(frameId, payload) {
+        function onFrameReceived(frameId, speed) {
             console.log("Received frame ID:", frameId)
-            console.log("Payload:", payload)
+            gauge.gaugeValue = speed;
+
+            // console.log("Payload:", payload)
 
             // Example: Assume speed data is in the first byte of payload
-            if (payload.length > 0) {
-                gauge.gaugeValue = payload[0];  // Update the gauge value from the first byte
-            }
+            // if (payload.length > 0) {
+            // gauge.gaugeValue = payload[0];  // Update the gauge value from the first byte
+            // }
+
         }
     }
 }
