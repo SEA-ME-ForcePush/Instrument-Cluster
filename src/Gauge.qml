@@ -8,9 +8,9 @@ import QtGraphicalEffects 1.0
 CircularGauge {
     id: gauge
 
-    property int gaugeValue: speedController.speed  // Bind to speedController's speed
+    property int gaugeValue: 0  // Define a dynamic property to hold the gauge value
 
-    value: gaugeValue
+    value: gaugeValue  // Bind to the dynamic property
     maximumValue: 250
 
     style: CircularGaugeStyle {
@@ -120,8 +120,17 @@ CircularGauge {
         }
     }
 
-    // Bind the gaugeValue to the SpeedController's speed property
-    Component.onCompleted: {
-        gaugeValue = speedController.speed;  // Initialize gaugeValue with current speed
+    // Connections to handle signals from CanHandler
+    Connections {
+        target: canHandler
+        function onFrameReceived(frameId, payload) {
+            console.log("Received frame ID:", frameId)
+            console.log("Payload:", payload)
+
+            // Example: Assume speed data is in the first byte of payload
+            if (payload.length > 0) {
+                gauge.gaugeValue = payload[0];  // Update the gauge value from the first byte
+            }
+        }
     }
 }
