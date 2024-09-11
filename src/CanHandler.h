@@ -19,7 +19,7 @@ public:
     void sendFrame(const QCanBusFrame &frame);
 
 signals:
-    void frameReceived(uint frameId, QList<int> payload);
+    void frameReceived(uint frameId, float speed);
 
 private slots:
     void processFrames();
