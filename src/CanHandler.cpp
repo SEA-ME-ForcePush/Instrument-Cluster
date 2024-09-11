@@ -72,7 +72,7 @@ void CanHandler::processFrames()
         QByteArray payload = frame.payload();
         qDebug() << "payload.data : " << payload.data();
 
-        double rpm;
+        float rpm;
         memcpy(&rpm, frame.payload(), sizeof(rpm));
         qDebug() << "rpm : " << rpm ;
 
