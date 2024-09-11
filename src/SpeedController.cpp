@@ -1,4 +1,4 @@
-#include "speedcontroller.h"
+#include "SpeedController.h"
 
 SpeedController::SpeedController(QObject *parent)
     : QObject(parent), m_speed(0)
