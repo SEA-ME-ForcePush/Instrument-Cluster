@@ -10,7 +10,7 @@ ApplicationWindow {
     // Include the Gauge component from Gauge.qml
     Gauge {
         id: gauge
-        maximumValue: 250
+        maximumValue: 300
         anchors.fill: parent
         anchors.margins: window.height * 0.2
 
