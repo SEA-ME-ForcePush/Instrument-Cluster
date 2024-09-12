@@ -6,7 +6,7 @@ const int CAN_CS_PIN = 9;
 const unsigned long pulse_per_turn = 20; // number of holes
 
 unsigned long oldtime = 0;
-double rpm = 0;
+float rpm = 0;
 unsigned long time;
 unsigned long pulse = 0;
 
@@ -30,7 +30,7 @@ void loop()
 {
     detachInterrupt(digitalPinToInterrupt(SPEED_SENSOR_PIN));
     time = millis() - oldtime; // find time
-    double round = (double)pulse / (double)pulse_per_turn;
+    float round = (float)pulse / (float)pulse_per_turn;
     rpm = round * 60.0 * 1000.0 / time; // calculate rpm
 
     oldtime = millis(); // save current time
@@ -42,10 +42,10 @@ void loop()
 
     // Send RPM data over CAN
     unsigned char rpmData[4];
-    memcpy(rpmData, &rpm, 4);
+    memcpy(rpmData, &rpm, sizeof(rpm));
     CAN.sendMsgBuf(0x100, 0, 4, rpmData);
 
-    delay(1000);
+    delay(100);
 }
 
 void count()
