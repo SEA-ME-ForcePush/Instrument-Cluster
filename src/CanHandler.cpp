@@ -76,7 +76,7 @@ void CanHandler::processFrames()
         memcpy(&rpm, frame.payload(), sizeof(rpm));
         qDebug() << "rpm : " << rpm ;
 
-        float speed = 2 * 3.14 * 6.7 * rpm / 60;
+        float speed = 3.14 * 6.7 * rpm / 60;
 
         speed = kalmanFilter->update( speed);
 
