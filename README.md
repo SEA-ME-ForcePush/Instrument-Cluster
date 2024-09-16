@@ -7,6 +7,9 @@
 |[Jisoo](https://github.com/nimo-my)|[Alexander](https://github.com/atoepper)|[Welf](https://github.com/Welf42)|[Ahsan](https://github.com/Ahsanbaloch)|
 |HW&Compiling|Qt&Preprocessing|Qt&Compiling|HW|
 
+## 📍 FlowChart
+![flowchart](documentation/assets/flowchart.jpg)
+
 ## 📚 Documentations (Wiki)
 01. [Arduino](https://github.com/SEA-ME-ForcePush/Instrument-Cluster/wiki/%5B1%5D-Arduino)
 02. [CAN](https://github.com/SEA-ME-ForcePush/Instrument-Cluster/wiki/%5B2%5D-CAN)
@@ -15,5 +18,4 @@
 05. [Compilation](https://github.com/SEA-ME-ForcePush/Instrument-Cluster/wiki/%5B4%5D-Compilation)
 06. [Testings and struggles](https://github.com/SEA-ME-ForcePush/Instrument-Cluster/wiki/%5B%E2%80%90%5D-Testings-and-Struggles)
 
-## 📍 FlowChart
-![flowchart](documentation/assets/flowchart.jpg)
+
