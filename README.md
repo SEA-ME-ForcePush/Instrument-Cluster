@@ -5,7 +5,7 @@
 |🐱|🐰|🐻‍❄️|🐶|
 |:------:|:---:|:---:|:------:|
 |[Jisoo](https://github.com/nimo-my)|[Alexander](https://github.com/atoepper)|[Welf](https://github.com/Welf42)|[Ahsan](https://github.com/Ahsanbaloch)|
-|HW&Compiling|Qt&Preprocessing|Qt&Compiling|HW|
+|HW&Compiling|Qt&Preprocessing|Qt&Compiling|HW&scipting|
 
 ## 📍 FlowChart
 ![flowchart](documentation/assets/flowchart.jpg)
